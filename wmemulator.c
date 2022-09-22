@@ -439,7 +439,9 @@ int main(int argc, char *argv[])
       }
       else
       {
-        graceful_disconnect(&host_bdaddr);
+        // graceful_disconnect doesn't exist
+        //graceful_disconnect(&host_bdaddr);
+        disconnect();
       }
     }
 

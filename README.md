@@ -37,6 +37,9 @@ Run the emulator (in the project directory):
 
   > ./wmemulator
 
+NOTE: The emulator uses an SDL window to receive inputs, and don't forget that sudo doesn't pass through the DISPLAY variable by default.
+If SDL can't create a window, there is no indication.
+
 With no arguments, the emulator will listen for incoming connections (similar to
 syncing a real Wiimote). Pressing the sync button on a Wii should cause it to
 connect.
